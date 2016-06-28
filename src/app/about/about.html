@@ -1,0 +1,33 @@
+<div class="container">
+	<div>
+	<acme-navbar></acme-navbar>
+</div>
+<div class="jumbotron table">
+	<span style="background-color: #6f5499">  <h1>Products</h1></span>
+	<!-- <table class="table table-striped table-bordered table-condensed table-hover" ng-repeat="product in about.products">
+		<thead style="background-color: grey">
+			<tr>
+						<th>Name</th>
+						<th>Price </th>
+						<th> Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+						<td> {{product.name}}</td>
+						<td> {{product.price}}</td>
+						<td> {{product.status}}</td>
+				</tr>
+			</tbody>
+	</table>  -->
+	<div class="row">
+		<div class="col-sm-6 col-md-4" ng-repeat="product in about.products">
+			<div class="thumbnail" style="background-color: #6f5499">
+				<card-view-dir data="product"></card-view-dir>
+				<img class="pull-right" ng-src="assets/images/gulp.png" alt="{{ product.title }}">
+			</div>
+		</div>
+	</div>
+	
+</div>
+</div>
